@@ -189,27 +189,7 @@ make run-advanced
    - `3`: Medium priority (gets 1/3 time slice)
    - `4`: Lowest priority (gets 1/4 time slice)
 
-## Testing
 
-### Running All Tests
-```bash
-make test
-```
-
-### Running Individual Tests
-```bash
-# Test shell functionality
-./tests/test_shell.sh
-
-# Test basic scheduler
-./tests/test_basic_scheduler.sh
-
-# Test advanced scheduler
-./tests/test_advanced_scheduler.sh
-
-# Test integrated system
-./tests/test_integrated_shell.sh
-```
 
 ## Architecture Details
 
