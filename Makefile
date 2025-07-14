@@ -11,7 +11,6 @@ SRC_DIR = src
 INCLUDE_DIR = include
 BUILD_DIR = build
 BIN_DIR = bin
-TEST_DIR = tests
 
 # Source files
 SHELL_SRC = $(SRC_DIR)/shell.c
@@ -90,12 +89,6 @@ basic_scheduler: directories $(BASIC_SCHEDULER_EXEC)
 advanced_scheduler: directories $(ADVANCED_SCHEDULER_EXEC)
 integrated: directories $(INTEGRATED_SHELL_EXEC)
 
-# Test targets
-test: all
-	@echo "Running tests..."
-	@chmod +x $(TEST_DIR)/*.sh
-	@$(TEST_DIR)/run_tests.sh
-
 # Clean build files
 clean:
 	rm -rf $(BUILD_DIR) $(BIN_DIR)
@@ -149,7 +142,6 @@ help:
 	@echo "  run-shell     - Run simple shell"
 	@echo "  run-basic     - Run basic scheduler"
 	@echo "  run-advanced  - Run advanced scheduler"
-	@echo "  test          - Run all tests"
 	@echo "  clean         - Remove build files"
 	@echo "  install       - Install to system PATH"
 	@echo "  uninstall     - Remove from system PATH"
