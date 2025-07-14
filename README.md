@@ -19,12 +19,6 @@ Shell-Scheduler/
 │   ├── basic_scheduler.c   # Basic round-robin scheduler
 │   ├── advanced_scheduler.c # Priority-based scheduler
 │   └── integrated_shell.c  # Main integration program
-├── tests/                  # Test scripts
-│   ├── run_tests.sh       # Main test runner
-│   ├── test_shell.sh      # Shell tests
-│   ├── test_basic_scheduler.sh    # Basic scheduler tests
-│   ├── test_advanced_scheduler.sh # Advanced scheduler tests
-│   └── test_integrated_shell.sh   # Integration tests
 ├── bin/                    # Compiled executables (created during build)
 ├── build/                  # Object files (created during build)
 ├── Makefile               # Build configuration
